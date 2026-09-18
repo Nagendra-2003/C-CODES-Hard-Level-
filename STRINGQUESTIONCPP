@@ -1,8 +1,9 @@
 #include<iostream.h>
 #include<conio.h>
 void main()
-  {
-     /*	clrscr();
+  {  
+	// FIND UPPER CASE ,LOWER CASE, AND VOWELS FROM STRING
+     clrscr();
 	char name[20];
 	int i,j,len=0,flag=1,count=0,count2=0,vowel;
 	cout<<"enter string";
@@ -10,18 +11,13 @@ void main()
 
 	for(i=0;name[i]!='\0';i++)
 	{
-
-
-
-
-	len++;
+    len++;
 	}
 	cout<<endl<<len;
-      /*	 flag=1;
+    flag=1;
 	for(i=0,j=len-1;i<=len/2;i++,j--)
 	{
-
-	if(name[i] !=name[j])
+     if(name[i] !=name[j])
 	{
 	flag=0;
 	break;
@@ -54,29 +50,32 @@ void main()
 	cout<<endl<<"upercase"<<count;
 	cout<<endl<<"lowercase"<<count2;
 	cout<<endl<<"vowel in string"<<vowel;
+	getch();
+
+//	FIND THE TOTAL WORDS IN STRING
 	count=1;
 
 	 for(i=len-1;i>=0;i--)
 	 {
 	 cout<<name[i];
-      //	 for(j=i+1;j<len;j++)
-       //  if(name[i]==32)
-	 // {
+	 for(j=i+1;j<len;j++)
+	{
+       if(name[i]==32)
+		{
+	    continue;
+		count++;
+		}
+    	 if( name[i]==name[j])
+       	 {
+		 name[i]=0;
+		} }
+       	 cout<<endl<<count;
+      	 cout<<endl<<name[i];
+		}
+		
+		 getch();
 
-	  // continue;
-	// count++;
-       //	 if( name[i]==name[j])
-       //	 {
-	// name[i]=0;
-       //
-
-
-	 }
-       //	 cout<<endl<<count;
-      //	 cout<<endl<<name[i];
-
-
-
+// DELETE ANY CHARACTER FROM STRING AT FIXED POSITION
       clrscr();
       char string[20],i,pos,len;
 
@@ -116,7 +115,8 @@ void main()
 	 {
 	 cout<<string[i];
 	 }
-
+	getch();
+    // SORTING OF ANY STRING
        clrscr();
        char name[5][20],temp;
        int i,j,len,k;
@@ -153,7 +153,9 @@ void main()
 
 	getch();
 	}
-       */
+
+
+// ADD A STRING OR CHARATER IN BETWEEN  OTHER STRING AT A SPECIFIC POSITION
        clrscr();
        char name1[20],name2[20];
        int i,j,len1=0,len2=0,pos=-1,x;
