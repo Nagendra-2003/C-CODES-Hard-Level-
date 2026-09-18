@@ -1,0 +1,204 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+  {
+     /*	clrscr();
+	char name[20];
+	int i,j,len=0,flag=1,count=0,count2=0,vowel;
+	cout<<"enter string";
+	cin.getline(name,20);
+
+	for(i=0;name[i]!='\0';i++)
+	{
+
+
+
+
+	len++;
+	}
+	cout<<endl<<len;
+      /*	 flag=1;
+	for(i=0,j=len-1;i<=len/2;i++,j--)
+	{
+
+	if(name[i] !=name[j])
+	{
+	flag=0;
+	break;
+	}
+	}
+	if(flag==1)
+	{
+	cout<<"it is palindrome";
+	}
+	else
+	{
+	cout<<endl<<"not it is not palindroime";
+	}
+	count2=0,vowel=0;
+	for(i=0;i<len;i++)
+	{
+	if(name[i]=='a' || name[i]=='e' || name[i]=='o' || name[i]=='u' ||name[i]=='i')
+	{
+	vowel++;
+	}
+	if(name[i]>=65 &&name[i]<=90)
+	{
+	count++;
+	}
+	else if(name[i]>=97 && name[i]<=122)
+	{
+	count2++;
+	}
+	}
+	cout<<endl<<"upercase"<<count;
+	cout<<endl<<"lowercase"<<count2;
+	cout<<endl<<"vowel in string"<<vowel;
+	count=1;
+
+	 for(i=len-1;i>=0;i--)
+	 {
+	 cout<<name[i];
+      //	 for(j=i+1;j<len;j++)
+       //  if(name[i]==32)
+	 // {
+
+	  // continue;
+	// count++;
+       //	 if( name[i]==name[j])
+       //	 {
+	// name[i]=0;
+       //
+
+
+	 }
+       //	 cout<<endl<<count;
+      //	 cout<<endl<<name[i];
+
+
+
+      clrscr();
+      char string[20],i,pos,len;
+
+      cout<< "enter string";
+      cin>>string;
+      cout<<"enter postion";
+      cin>>pos;
+      pos--;
+      for(i=0;string[i]!='\0';i++)
+      {
+      len++;
+      }
+      for(i=0;i<len;i++)
+      {
+
+      if(i==pos)
+      {
+	 pos=i;
+	 break;
+	 }
+	 }
+
+  if(pos==-1)
+  {
+  cout<<"post not found";
+  }
+  else
+  {
+
+     for(i=pos;i<len-1;i++)
+      {
+	string[i]=string[i+1];
+	}
+	 }
+	 cout<<"after deleting ";
+	 for(i=0;i<len-1;i++)
+	 {
+	 cout<<string[i];
+	 }
+
+       clrscr();
+       char name[5][20],temp;
+       int i,j,len,k;
+       for(i=0;i<=4;i++)
+       {
+       cout<<"enter name";
+       cin>>name[i];
+       }
+       for(i=0;i<=4;i++)
+       {
+       len=0;
+       for(j=0;name[i][j]!='\0';j++)
+       {
+       len++;
+       }
+       for(j=0;j<len-1;j++)
+       {
+       for(k=i+1;k<len;k++)
+       {
+
+       if(name[i][j]>name[i][k])
+       {
+       temp=name[i][j];
+       name[i][j]=name[i][k];
+       name[i][k]=temp;
+       }
+       }
+       }
+       for(j=0;j<len;j++)
+       {
+       cout<<name[i][j];
+       }
+       }
+
+	getch();
+	}
+       */
+       clrscr();
+       char name1[20],name2[20];
+       int i,j,len1=0,len2=0,pos=-1,x;
+
+       cout<<"enter name";
+       cin>>name1;
+       cout<<"enter name2";
+       cin>>name2;
+       cout<<"enter poss";
+       cin>>pos;
+
+       pos--;
+       x=pos;
+       for(i=0;name1[i]!='\0';i++)
+       {
+	len1++;
+	}
+	for(i=0;name2[i]!='\0';i++)
+	{
+	len2++;
+	}
+
+	if(pos>len2)
+	{
+	cout<<endl<<"invalid enter";
+	}
+	else
+	{
+	for(i=0;i<len1;i++)
+	{
+	    name2[pos]=name1[i]  ;
+	    pos++;
+	}
+	}
+	for(j=x;name2[j]!='\0';j++)
+	{
+	name2[pos]=name2[j];
+	}
+
+
+
+	for(i=0;i<len1+len2;i++)
+	{
+	cout<<name2[i];
+	}
+
+	getch();
+	}
