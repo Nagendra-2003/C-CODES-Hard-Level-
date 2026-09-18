@@ -33,7 +33,7 @@ char* check(char string[],char a)
 	      cout<<s;
 		getch();
 		}
-			  /*
+			  
 
 int check( char string[],char a)
 {
@@ -54,4 +54,4 @@ int check( char string[],char a)
        ans=check("artiest",'e');
        cout<<endl<<ans;
        getch();
-       }                    */
+       }                    
